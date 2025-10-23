@@ -1,24 +1,24 @@
 # Repositorio de Avances en Predicción de Cintilación Ionosférica
 
-Este repositorio contiene avances realizados para verificar que los datos proporcionados por el LISN del IGP cuentan con la información necesaria para nuestros modelos de predicción de cintilación ionosférica (índice S4).  
+Este repositorio contiene avances realizados para verificar que los datos proporcionados por el LISN del IGP cuenten con la información necesaria para nuestros modelos de predicción de cintilación ionosférica (índice S4).  
 
 Se ha verificado cómo varía el índice S4 en diferentes años y meses con el fin de analizar su comportamiento y su impacto en señales GNSS.  
 
 ## Datos
 
 - **JM91J_2025230.SAO**: Archivo obtenido desde la sección de ionosonde del LISN. Este archivo no está en texto plano, por lo que se está desarrollando un script para leerlo correctamente y extraer variables ionosféricas, especialmente de la capa F2, con el objetivo de medir la altura de la capa y predecir eventos de cintilación.  
-- **CSV de GNSS (Jicamarca_S4_*.csv)**: Archivos exportados desde GNSS ya en formato adecuado para lectura con pandas. Se realizó un procesamiento previo de cada dataset obtenido de la página debido a que los datos estaban desordenados y no tenían etiquetas claras para cada variable.
+- **CSV de GNSS (Jicamarca_S4_*.csv)**: Estos archivos exportados desde GNSS de LISN ya se encuentran en el formato adecuado para lectura con pandas. Se realizó un procesamiento previo de cada dataset obtenido de la página debido a que los datos estaban desordenados y no tenían etiquetas claras para cada variable.
 
 ## Cuadernos y Scripts
 
 - **proyecto.ipynb**: Cuaderno principal con análisis y visualización de los datos S4.  
-- **dataset.py** y **sao_parser.py**: Scripts en desarrollo para el manejo y lectura de datasets.  
+- **sao_parser.py**: Script en desarrollo para el manejo y lectura de datasets.  
 
-## Estructura de Carpetas
+## Estructura de Carpetas y Archivos
 
-- `datasets_jicamarca/` : CSV procesados con los datos S4 listos para análisis.  
-- `recursos/` : Recursos auxiliares.  
-- `__pycache__/` : Caché de Python (automáticamente generado).  
+- `20XX_Mes/` : Carpeta que contiene los archivos crudos sin procesar de la página LISN. 
+- `recursos/` : Recursos auxiliares.
+- `Jicamarca_S4_MES20XX` : Archivos CSV procesados con la estructura correcta y legible.
 
 ## Estado Actual
 
