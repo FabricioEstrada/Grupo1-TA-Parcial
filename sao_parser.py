@@ -1,12 +1,21 @@
 import re
 import pandas as pd
 
+"Código NO funcional, primero se está sacando patrones directamente en lectura"
+"como texto plano comparando y verificando la lectura con la ayuda de la herramienta"
+"científica SAOExplorer."
+"Esta herramienta nos permite poder visualizar y decodificar correctamente archivos"
+".SAO, pero no cuenta con librerías para Python por eso solo sirve como guía."
+
+"""
 def read_sao(filepath):
     """
+"""
     Lee un archivo .SAO (ionosonda de Jicamarca o similar)
     y extrae variables principales: fecha, hora, foF2, hmF2, foEs, etc.
     Devuelve un DataFrame con los resultados.
     """
+"""
     pattern_time = re.compile(r"TIME\s*=\s*(\d{6})")
     pattern_date = re.compile(r"DATE\s*=\s*(\d{6})")
     pattern_foF2 = re.compile(r"foF2\s*=\s*([0-9.]+)")
@@ -44,4 +53,4 @@ def read_sao(filepath):
         df = df.sort_values("DATETIME").reset_index(drop=True)
 
     return df
-
+    """
