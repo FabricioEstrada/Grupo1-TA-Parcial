@@ -1,1 +1,5 @@
 Jicamarca_S4_Apr2025.csv filter=lfs diff=lfs merge=lfs -text
+Jicamarca_S4_Aug2025.csv filter=lfs diff=lfs merge=lfs -text
+Jicamarca_S4_Dec2023.csv filter=lfs diff=lfs merge=lfs -text
+Jicamarca_S4_Dec2024.csv filter=lfs diff=lfs merge=lfs -text
+Jicamarca_S4_Jul2025.csv filter=lfs diff=lfs merge=lfs -text
